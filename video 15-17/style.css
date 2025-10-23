@@ -1,0 +1,22 @@
+.red {
+     background-color: yellow;
+     color: red;
+ }
+
+ #green{
+    background-color: green;
+ }
+
+ universal selector * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /* pseudo class selector */
+  a:hover { 
+    color: rgb(196, 19, 40);
+    visited {
+        color: rgb(223, 153, 223);
+    }
+ }
