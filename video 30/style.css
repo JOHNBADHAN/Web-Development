@@ -24,7 +24,7 @@ ul li {
     opacity: var(--defop);
     list-style-type: none;
     padding: var(--defpad);
-    border: 2px solid white;
+    border: 2px solid white; 
 }
 
 ul li:first-child {
