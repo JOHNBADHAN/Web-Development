@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MultiColor Website</title>
+    <style>
+
+        :root{
+            --primary-color: rgb(26, 96, 186);
+            --secondary-color: lightgray;
+            --text-color: white;
+            --padding: 0px;
+            --margin: 0px;
+        }
+
+        .sticky{
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        body{
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: var(--padding);
+            margin: var(--margin);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            background-color: rgb(83, 105, 133);
+            padding: 10px 0;
+          
+        }
+        ul li {
+            
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            display: inline;
+            /* margin-right: 20px; */
+            font-size: 20px;
+            color: rgb(140, 8, 41);
+            /* font-weight: bold; */
+            padding: 23px;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="sticky">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+</body>
+</html>

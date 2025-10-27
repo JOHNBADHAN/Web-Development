@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        }
+
+        .box:first-line{
+            color: rgb(14, 120, 185);
+        }
+         .boxes *{
+            border: 2px solid black;
+            color: blue; }*/
+
+         
+
+         .boxes::before{
+            content: "The Name is Bond , James Bond";
+            color: rgb(230, 43, 43);
+         }
+        .boxes::after{
+            content: "The End";
+            color: rgb(94, 19, 7);
+         }
+         ::selection{
+            background-color: black;
+            color: white;
+         }
+
+         .box::first-letter{
+            color: peru;
+            font-size: 30px;
+         }
+
+         input::placeholder{
+            color: green;
+            font-weight: bold;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="type your name here">
+    </div>
+</body>
+
+</html>
